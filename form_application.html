@@ -26,38 +26,37 @@ let fNmame = document.forms["form_application"]["firstname"].value;
 
 function validateForm() {
 	// Get data from form firstname, lastname, email, number, message
-	alert("here");
 	//validate
 	let fNmame = document.forms["form_application"]["firstname"].value;
 	if (fNmame == "") {
 		alert("Firstname must be filled out");
 		return false;
 	}
-	return true;
+	
 	let lName = document.forms["form_application"]["lastname"].value;
 	if (lName == "") {
 		alert("lastname must be filled out");
 		return false;
 	}
-		return true;
+		
 	let email = document.forms["form_application"]["email"].value;
 	if (email == "") {
 		alert("email must be filled out");
 		return false;
 	}
-	return true;
-	let mobnumber = document.forms["form_application"]["number"].value;
+	
+	let mobnumber = document.forms["form_application"]["Contactnumber"].value;
 	if (mobnumber == "") {
 		alert("Number must be filled out");
 		return false;
 	}
-	return true;
+	
 	let apmessage = document.forms["form_application"]["message"].value;
 	if (apmessage == "") {
 		alert("message must be filled out");
 		return false;
 	}
-	return true;
+	
 	if (emailIsValid(email)==false) {
 		alert("email format in incorrect");
 		return false;
