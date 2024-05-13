@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="Hot beans recruitment">
+  <meta name="keywords" content="recruitment, web development, hiring">
+  <meta name="author" content="Henry Loong">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="mainstyle.css" >
+<title>Hot beans</title>
+
+</head>
+<body>
+<script>
+function validateForm() {
+let fNmame = document.forms["form_application"]["firstname"].value;
+	if (fNmame == "") {
+		alert("Firstname must be filled out");
+		return false;
+	}
+	return true;
+}
+/*function emailIsValid(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}*/
+
+function validateForm() {
+	// Get data from form firstname, lastname, email, number, message
+	alert("here");
+	//validate
+	let fNmame = document.forms["form_application"]["firstname"].value;
+	if (fNmame == "") {
+		alert("Firstname must be filled out");
+		return false;
+	}
+	return true;
+	let lName = document.forms["form_application"]["lastname"].value;
+	if (lName == "") {
+		alert("lastname must be filled out");
+		return false;
+	}
+		return true;
+	let email = document.forms["form_application"]["email"].value;
+	if (email == "") {
+		alert("email must be filled out");
+		return false;
+	}
+	return true;
+	let mobnumber = document.forms["form_application"]["number"].value;
+	if (mobnumber == "") {
+		alert("Number must be filled out");
+		return false;
+	}
+	return true;
+	let apmessage = document.forms["form_application"]["message"].value;
+	if (apmessage == "") {
+		alert("message must be filled out");
+		return false;
+	}
+	return true;
+	if (emailIsValid(email)==false) {
+		alert("email format in incorrect");
+		return false;
+	}
+	return true;
+	}
+
+</script>
+<header>
+<h1 class="main-header"> Welcome to hot beans recruitment</h1>
+</header>
+<nav class="navbar">
+	<ul class="nav-list">
+		<li>
+			<a href="Jobs spec.html"> JOBS SPEC</a>
+		</li>
+		<li>
+			<a href="company profile.html">company profile</a>
+		</li>
+		<li>
+			<a href="employee profiles.html">employee profiles</a>
+		</li>
+		<li>
+			<a href="website course links.html">website course links</a>
+		</li>
+		<li>
+			<a href="form_application.html">application forms</a>
+		</li>
+
+		<li>
+			<a href="index.html"><img src="the bean.PNG" alt="the Bean" style="width:50px;height:50px;"></a>
+		</li>
+	</ul>
+</nav>
+<section>
+<h2>Apply Here</h2>
+<form  name="form_application" onsubmit="return validateForm()"  enctype="multipart/form-data"  method="POST" action="https://formspree.io/f/xjvnlrvw" >
+<label>Your firstname: <input type="firstname" name="firstname"></label>
+<br>
+<label>Your lastname: <input type="lastname" name="lastname"></label>
+<br>
+<label>Your contact number: <input type="number" name="Contactnumber"></label>
+<br>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <br>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <br>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+
+
+</form>
+</section>
+		<footer>
+			<p>&copy; 2024 hotbeans, all rights reserved, all potatos denied and all beans welcome</p>
+		</footer>
+</body>
+<html>

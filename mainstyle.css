@@ -1,0 +1,78 @@
+body {
+	background: #ff7f50;
+	font-family: 'OCR A Std', monospace;
+}
+nav ul {
+	padding: 0;
+	background-color: lightblue;
+	
+}
+nav ul li {
+	display: inline;
+	margin: 5px;
+}
+.main-header {
+	text-align: center;
+	height: 80px;
+		line-height: 80px;
+		margin: 0;
+		padding-left: 10px;
+		background: #33adff;
+		color: #292929;
+}
+.navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+            background-color:rgba(0,0,300,0.3);
+            background-size: cover;
+            color: lightblue;
+            padding: 10px 20px;
+        }
+			.nav-list {
+            display: flex;
+            list-style: none;
+        }
+		.nav-list li {
+            margin-right: 20px;
+        }
+ 
+    .nav-list li:last-child {
+            margin-right: 0;
+        }
+		
+		 .nav-list li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+    }
+ 
+    .nav-list li a:hover {
+            color: #ffd700;
+    }
+ .flex-container {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		background-color: #0099ff;
+	}
+	.flex-container > div {
+		background-color:rgba(200,200,200,0.3);
+		color: black;
+		margin: 10px;
+		text-align: center;
+		line-height: 25px;
+		font-size: 15px;
+	}
+	@media (max-width: 800px) {
+		.flex-container {
+			flex-direction: column;
+		}
+	}
+	    .pteam {
+            text-align: justify;
+            font-size: 15px;
+        }
